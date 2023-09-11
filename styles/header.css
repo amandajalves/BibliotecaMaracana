@@ -17,6 +17,7 @@
 
 .container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -28,9 +29,14 @@
     display: none;
 }
 
-.lista-menu{
+.container__botao{
     display: none;
-    position: relative;
+}
+
+.lista-menu{
+    background-color: var(--branco);
+    display: none;
+    position: absolute;
     top: 100%;
     width: 60vw;
 }
@@ -40,16 +46,19 @@
 }
 
 .lista-menu__titulo, .lista-menu__item{
+    color: var(--amarelo);
+    font-weight: 700;
     padding: 1em;
-    background-color: var(--branco);
 }
 
 .lista-menu__link{
-    background: var(--roxo);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--roxo);
+    text-decoration: none;
     text-transform: uppercase;
+}
+
+.container__texto{
+    display: none;
 }
 
 @media screen and (min-width: 1024px){
